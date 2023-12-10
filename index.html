@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+
+    <title>Tailwind FAQ Accordion</title>
+  </head>
+  <body
+    class="flex items-center justify-center bg-dark-purple text-dark-purple"
+  >
+    <div
+      class="card__container flex flex-col items-center justify-center w-full"
+    >
+      <div
+        class="card__inner bg-light-pink min-h-[812px] md:min-h-[900px] relative flex flex-col items-center"
+      >
+        <img
+          src="assets/images/background-pattern-mobile.svg"
+          alt=""
+          width="375"
+          height="232"
+          class="md:hidden"
+        />
+        <img
+          src="assets/images/background-pattern-desktop.svg"
+          alt=""
+          width="1440"
+          height="320"
+          class="hidden md:block"
+        />
+        <div
+          class="accordion__card bg-white p-6 rounded-lg absolute top-32 md:top-28 mx-6 md:min-w-[600px] md:px-10 shadow-2xl shadow-['rgba(80, 0, 118, 0.01)']"
+        >
+          <div class="accordion__title flex items-center pt-3 pb-6 md:pb-10">
+            <img src="assets/images/icon-star.svg" alt="" class="h-6 md:h-8" />
+            <h1 class="ml-5 text-3xl md:text-[56px] font-bold">FAQs</h1>
+          </div>
+          <div class="accordion__item cursor-pointer group pb-4">
+            <header
+              class="flex items-center justify-between font-semibold gap-4 w-full z-10"
+            >
+              <h2 class="group-hover:text-bright-pink md:text-lg">
+                What is Frontend Mentor, and how will it help me?
+              </h2>
+              <img
+                class="icon-plus h-8"
+                src="assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                class="icon-minus h-8 hidden"
+                src="assets/images/icon-minus.svg"
+                alt=""
+              />
+            </header>
+            <p
+              class="accordion__content hidden text-gray-purple py-4 text-sm md:text-base max-w-lg"
+            >
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building
+            </p>
+          </div>
+          <div
+            class="accordion__item cursor-pointer group border-t-[1px] border-light-pink pb-4"
+          >
+            <header
+              class="flex items-center justify-between font-semibold pt-4 gap-4 w-full"
+            >
+              <h2 class="group-hover:text-bright-pink md:text-lg">
+                Is Frontend Mentor free?
+              </h2>
+              <img
+                class="icon-plus h-8"
+                src="assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                class="icon-minus h-8 hidden"
+                src="assets/images/icon-minus.svg"
+                alt=""
+              />
+            </header>
+            <p
+              class="accordion__content hidden text-gray-purple py-4 text-sm md:text-base max-w-lg"
+            >
+              Yes, Frontend Mentor offers both free and premium coding
+              challenges, with the free option providing access to a range of
+              projects suitable for all skill levels.
+            </p>
+          </div>
+          <div
+            class="accordion__item cursor-pointer group border-t-[1px] border-light-pink pb-4"
+          >
+            <header
+              class="flex items-center justify-between font-semibold pt-4 gap-4 w-full"
+            >
+              <h2 class="group-hover:text-bright-pink md:text-lg">
+                Can I use Frontend Mentor projects in my portfolio?
+              </h2>
+              <img
+                src="assets/images/icon-plus.svg"
+                alt=""
+                class="icon-plus h-8"
+              />
+              <img
+                src="assets/images/icon-minus.svg"
+                alt=""
+                class="icon-minus h-8 hidden"
+              />
+            </header>
+            <p
+              class="accordion__content hidden text-gray-purple py-4 max-w-lg text-sm md:text-base"
+            >
+              Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!
+            </p>
+          </div>
+          <div
+            class="accordion__item cursor-pointer group border-t-[1px] border-light-pink pb-4"
+          >
+            <header
+              class="flex items-center justify-between font-semibold gap-4 pt-4 w-full"
+            >
+              <h2 class="group-hover:text-bright-pink md:text-lg">
+                How can I get help if I'm stuck on a challenge?
+              </h2>
+              <img
+                src="assets/images/icon-plus.svg"
+                alt=""
+                class="icon-plus h-8"
+              />
+              <img
+                src="assets/images/icon-minus.svg"
+                alt=""
+                class="icon-minus h-8 hidden"
+              />
+            </header>
+            <p
+              class="accordion__content hidden text-gray-purple py-4 text-sm md:text-base max-w-lg"
+            >
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
